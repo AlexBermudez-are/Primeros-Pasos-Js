@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,19 +52,17 @@
             let nombre = "jhon";
             let apellido2 = "dae";
             let saludo ="Hola mi nombre es" + " " + nombre +" " + apellido2 + " ";
-            let estaciones =
-            `<ul>
-            <li>primavera</li>
-            <li>verano</li>
-            <li>otoño</li>
-            </ul>`;
-            console.log(saludo)
+            let saludo2 = `Hola mi nombre es ${nombre} ${apellido2}.`
+            console.log(saludo2)
+
+            let cadenas ="¡cacahuate!"
+            let django = "¡si!"
+            let saludoCacahuate = `${cadenas} ${cadenas} ${django}`
+            console.log(saludoCacahuate);
 
             ***************************************
 
-            let saludo2 = `Hola mi nombre es ${nombre} ${apellido2}.`
-            console.log(saludo2)
-            console.log(estaciones)
+            
 
             let a = 5;
             let b = 6;
@@ -88,13 +86,108 @@
             let d = Boolean ("")
             let e = Boolean (" ")
             console.log(v, f, b, a, d, e);
-            ***************************************
-            */
-            function valoresDeFunciones(){
-                console.log(1)
-                console.log(2)
-                console.log(3)
+            ****************************************/
+            Function
+               /*
+            function estoEsUnaFuncion(){
+                console.log("uno");
+                console.log("dos");
+                console.log("tres");
             }
+
+            estoEsUnaFuncion();
+
+            function valorDeFuncion() {
+                console.log("uno");
+                console.log("dos");
+                console.log("tres");
+                return "Esto es un retorno"
+            }
+
+            let varianteDeFuncion=valorDeFuncion()
+            console.log(varianteDeFuncion);
+            
+            function olvidala() {
+                console.log("es facil para ti")
+                console.log("por eso debo hablarle")
+                return "- no, fakiu"
+                console.log("si es preciso rogarle")
+                console.log("que regrese a mi vida")
+            }
+            let intentalo=olvidala()
+            console.log(intentalo);
+
+
+            function hola(nombre, nombre2, apellido, apellido2) {
+                console.log(`hola mi nombre es ${nombre} y me apellido ${apellido}`);
+                console.log(`y yo me llamo ${nombre2} ${apellido2}`);
+            }
+            hola("gilberto", "ramon", "perez", "pìto");
+
+            funcionDeclarada()
+            function funcionDeclarada () {
+                console.log("esto es una funcion declarada");
+            }
+
+            const funcionesAnonimas = function () {
+                console.log("esto es una fucnion anonima, ya que no necesita un atributo para compilar");
+            }
+            funcionesAnonimas()
+            ********************************************
+            */
+            
+            Array
+            /*
+            const a = ["hola"];
+            const b =[true, "soy un array", 31, ["A", "B", "C", [1, 2, 3]]];
+            console.log(b);
+            console.log(b.length);
+            console.log(b[1]);
+            console.log(b[0]);
+            console.log(b[3][2]);
+            console.log(b[3][3][0]);
+
+            const d = Array(100).fill(true)
+            console.log(d);
+
+            const colores = ["blanco", "negro", "azul"]
+            console.log(colores);
+
+            colores.push("beige");
+            console.log(colores);
+            colores.forEach(function(el, index){
+                console.log(`<li id= "${index}">${el}</li>`);
+            })
+            ************************************
+            
+            */
+            const objetos ={
+                paleta: "de dulce",
+                candy: "de mango",
+                chicles:["de menta", "de fresa", "y de mora"],
+                buenProgramador: false,
+                contacto: {
+                    correo: "edbwinn@gmail.com",
+                    telefono:"4646523517",
+                    casaDeSoltero: "avenida siempre viva",
+                },
+                saludar: function() {
+                    console.log(`Hola`)
+                },
+                otroSaludo: function() {
+                    console.log(`se me antoja una paleta ${this.paleta} y un chicle
+                    ${this.candy}
+                    `)
+                }
+            }
+            console.log(objetos);
+            console.log(objetos.paleta);
+            console.log(objetos.buenProgramador);
+            console.log(objetos.candy);
+            console.log(objetos.chicles[2]);
+            console.log(objetos.contacto.casaDeSoltero);
+            objetos.saludar()
+            objetos.otroSaludo()
 
     </script>
 </body>
