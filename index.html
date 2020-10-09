@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
+
+</html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <div class="caja-saludo">Hola Alex</div>
+    <style>
+        .caja-saludo {
+            font-size: 40px;
+            background-color: pink;
+            width: 200px;
+            text-align: center;
+            height: 100px;
+            padding-top: 50px;
+            margin: 0 auto;
+            transition: width 2s, height 4s;
+            color: pink;
+        }
+
+        .caja-saludo:hover {
+            background-color: salmon;
+            color: white;
+            width: 100%;
+            height: 700px;
+        }
+    </style>
     <script>
+
         /*let hola = "buenas tardes"
         console.log(hola)
         {
@@ -87,108 +113,109 @@
             let e = Boolean (" ")
             console.log(v, f, b, a, d, e);
             ****************************************/
-            Function
-               /*
-            function estoEsUnaFuncion(){
-                console.log("uno");
-                console.log("dos");
-                console.log("tres");
-            }
+        Function
+        /*
+     function estoEsUnaFuncion(){
+         console.log("uno");
+         console.log("dos");
+         console.log("tres");
+     }
 
-            estoEsUnaFuncion();
+     estoEsUnaFuncion();
 
-            function valorDeFuncion() {
-                console.log("uno");
-                console.log("dos");
-                console.log("tres");
-                return "Esto es un retorno"
-            }
+     function valorDeFuncion() {
+         console.log("uno");
+         console.log("dos");
+         console.log("tres");
+         return "Esto es un retorno"
+     }
 
-            let varianteDeFuncion=valorDeFuncion()
-            console.log(varianteDeFuncion);
-            
-            function olvidala() {
-                console.log("es facil para ti")
-                console.log("por eso debo hablarle")
-                return "- no, fakiu"
-                console.log("si es preciso rogarle")
-                console.log("que regrese a mi vida")
-            }
-            let intentalo=olvidala()
-            console.log(intentalo);
+     let varianteDeFuncion=valorDeFuncion()
+     console.log(varianteDeFuncion);
+     
+     function olvidala() {
+         console.log("es facil para ti")
+         console.log("por eso debo hablarle")
+         return "- no, fakiu"
+         console.log("si es preciso rogarle")
+         console.log("que regrese a mi vida")
+     }
+     let intentalo=olvidala()
+     console.log(intentalo);
 
 
-            function hola(nombre, nombre2, apellido, apellido2) {
-                console.log(`hola mi nombre es ${nombre} y me apellido ${apellido}`);
-                console.log(`y yo me llamo ${nombre2} ${apellido2}`);
-            }
-            hola("gilberto", "ramon", "perez", "pìto");
+     function hola(nombre, nombre2, apellido, apellido2) {
+         console.log(`hola mi nombre es ${nombre} y me apellido ${apellido}`);
+         console.log(`y yo me llamo ${nombre2} ${apellido2}`);
+     }
+     hola("gilberto", "ramon", "perez", "pìto");
 
-            funcionDeclarada()
-            function funcionDeclarada () {
-                console.log("esto es una funcion declarada");
-            }
+     funcionDeclarada()
+     function funcionDeclarada () {
+         console.log("esto es una funcion declarada");
+     }
 
-            const funcionesAnonimas = function () {
-                console.log("esto es una fucnion anonima, ya que no necesita un atributo para compilar");
-            }
-            funcionesAnonimas()
-            ********************************************
-            */
-            
-            Array
-            /*
-            const a = ["hola"];
-            const b =[true, "soy un array", 31, ["A", "B", "C", [1, 2, 3]]];
-            console.log(b);
-            console.log(b.length);
-            console.log(b[1]);
-            console.log(b[0]);
-            console.log(b[3][2]);
-            console.log(b[3][3][0]);
+     const funcionesAnonimas = function () {
+         console.log("esto es una fucnion anonima, ya que no necesita un atributo para compilar");
+     }
+     funcionesAnonimas()
+     ********************************************
+     */
 
-            const d = Array(100).fill(true)
-            console.log(d);
+        Array
+        /*
+        const a = ["hola"];
+        const b =[true, "soy un array", 31, ["A", "B", "C", [1, 2, 3]]];
+        console.log(b);
+        console.log(b.length);
+        console.log(b[1]);
+        console.log(b[0]);
+        console.log(b[3][2]);
+        console.log(b[3][3][0]);
 
-            const colores = ["blanco", "negro", "azul"]
-            console.log(colores);
+        const d = Array(100).fill(true)
+        console.log(d);
 
-            colores.push("beige");
-            console.log(colores);
-            colores.forEach(function(el, index){
-                console.log(`<li id= "${index}">${el}</li>`);
-            })
-            ************************************
-            
-            */
-            const objetos ={
-                paleta: "de dulce",
-                candy: "de mango",
-                chicles:["de menta", "de fresa", "y de mora"],
-                buenProgramador: false,
-                contacto: {
-                    correo: "edbwinn@gmail.com",
-                    telefono:"4646523517",
-                    casaDeSoltero: "avenida siempre viva",
-                },
-                saludar: function() {
-                    console.log(`Hola`)
-                },
-                otroSaludo: function() {
-                    console.log(`se me antoja una paleta ${this.paleta} y un chicle
+        const colores = ["blanco", "negro", "azul"]
+        console.log(colores);
+
+        colores.push("beige");
+        console.log(colores);
+        colores.forEach(function(el, index){
+            console.log(`<li id= "${index}">${el}</li>`);
+        })
+        ************************************
+        
+        */
+        const objetos = {
+            paleta: "de dulce",
+            candy: "de mango",
+            chicles: ["de menta", "de fresa", "y de mora"],
+            buenProgramador: false,
+            contacto: {
+                correo: "edbwinn@gmail.com",
+                telefono: "4646523517",
+                casaDeSoltero: "avenida siempre viva",
+            },
+            saludar: function () {
+                console.log(`Hola`)
+            },
+            otroSaludo: function () {
+                console.log(`se me antoja una paleta ${this.paleta} y un chicle
                     ${this.candy}
                     `)
-                }
             }
-            console.log(objetos);
-            console.log(objetos.paleta);
-            console.log(objetos.buenProgramador);
-            console.log(objetos.candy);
-            console.log(objetos.chicles[2]);
-            console.log(objetos.contacto.casaDeSoltero);
-            objetos.saludar()
-            objetos.otroSaludo()
+        }
+        console.log(objetos);
+        console.log(objetos.paleta);
+        console.log(objetos.buenProgramador);
+        console.log(objetos.candy);
+        console.log(objetos.chicles[2]);
+        console.log(objetos.contacto.casaDeSoltero);
+        objetos.saludar()
+        objetos.otroSaludo()
 
     </script>
 </body>
+
 </html>
